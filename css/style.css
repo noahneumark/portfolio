@@ -1,0 +1,198 @@
+body {
+  background: black;
+  color: white;
+  overflow-x: hidden !important;
+}
+
+/*.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}*/
+
+#noahtop {
+  color: rgba(255, 255, 255, 0.43);
+  font-size: 1.5em;
+  text-shadow: 0 0 1px black;
+}
+
+#neumarktop {
+  color: rgba(255, 255, 255, 0.23);
+  font-size: 1.5em;
+  text-shadow: 0 0 1px black;
+}
+
+.affix {
+  top: 20px;
+}
+
+#candle {
+  z-index: -5;
+}
+
+#downarrow {
+  text-align: center;
+  font-size: 2em;
+}
+
+.splashtext {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  color: rgb(72, 201, 33);
+}
+
+p {
+  font-size: 1.5em;
+  color: hsl(358, 66%, 15%);
+}
+
+.intro {
+  /*border: 4px solid rgba(91, 18, 20, 0.7);*/
+  box-shadow:  0 0 10px rgba(91, 18, 20, 0.7) inset;
+  border-radius: 17px;
+  color: hsl(358, 66%, 15%);
+  position: relative;
+  z-index: 0;
+  background: url('../images/canada.png') no-repeat center;
+  background-size: cover;
+  /*box-shadow: 1px 2px 15px hsl(0, 0%, 20%);*/
+  filter: drop-shadow(1px 2px 15px hsl(0, 0%, 20%));
+  margin-bottom: 20px;
+}
+
+.inner {
+ padding: 20px;
+}
+
+#text{
+  font-family: 'Play', sans-serif;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.54);
+  border-radius: 17px;
+}
+
+#logocontainer {
+  position: relative;
+  /*height: 150px;*/
+  /*height: 80px;*/
+  bottom: 100px;
+  z-index: 1000;
+  /*backdrop-filter: blur(5px);*/
+  /*background: white;*/
+  /*margin-bottom: 10px;*/
+  /*display: none;*/
+}
+
+.noahlogo {
+  position: absolute;
+  top: 0;
+  left: 60;
+  width: 90%;
+  z-index: 1;
+}
+
+#noahfull {
+  /*background: rgba(255, 255, 255, 0.5);*/
+  filter: drop-shadow(0 0 8px black);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#noahart {
+  text-align: center;
+}
+
+#noahimg {
+  /*width: 100%;*/
+  height: auto;
+}
+
+
+.titlesection {
+  margin: 30px auto;
+  border-radius: 17px;
+  box-shadow:  0 0 10px rgba(91, 18, 20, 0.3) inset;
+  /*background: rgba(0, 0, 0, 0.63);*/
+  background: hsl(45, 12%, 55%);
+  filter: drop-shadow(1px 2px 5px hsla(0, 0%, 20%, 0.5));
+  padding: 5px;
+}
+
+h1 {
+  font-family: 'Play', sans-serif;
+  margin: 10px;
+  font-weight: 700;
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.firstFade {
+  opacity: 0;
+  transition: all 1.5s ease-out;
+}
+
+.project {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 17px 10px -10px hsla(0, 0%, 20%, 0.4);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  /*width: 90%;*/
+  box-shadow: 0 37px 15px -15px hsla(0, 0%, 20%, 0.2);
+  transform: translate(0, -6px);
+}
+
+h3 {
+  color: hsl(358, 66%, 15%);
+}
+
+.modal.and.carousel {
+  position: fixed; // Needed because the carousel overrides the position property
+}
+
+.footer {
+  margin-top: 100px;
+  height: 100px;
+  background: hsl(45, 12%, 55%)
+}
+
+@media (max-width: 767px) {
+  .logo {
+    max-height: 20px;
+    margin: 20px 10px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #noahimg {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    max-height: 35px;
+    margin: 30px 15px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  #noahimg {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    max-height: 50px;
+    margin: 30px 15px;
+  }
+  #noahimg {
+    width: 100%;
+  }
+}
