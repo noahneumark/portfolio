@@ -131,8 +131,8 @@ h1 {
 
 .project {
   margin-top: 30px;
-  width: 100%;
-  height: auto;
+  max-width: 350px;
+  max-height: 300px;
   box-shadow: 0 17px 10px -10px hsla(0, 0%, 20%, 0.4);
   border-radius: 3px;
   transition: all 0.3s ease;
@@ -150,6 +150,12 @@ h3 {
 
 .modal.and.carousel {
   position: fixed; // Needed because the carousel overrides the position property
+}
+
+.carousel-inner img {
+  max-height: 600px;
+  width: auto;
+  margin: auto;
 }
 
 .footer {

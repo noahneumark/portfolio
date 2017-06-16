@@ -56,6 +56,7 @@ $(document).ready(function(){
       TweenMax.from("#noahleft", 1, {x:"-=700"}),
       TweenMax.from("#noahright", 1, {x:"+=1400"}),
       TweenMax.from(".intro", 1, {css:{opacity: 0}}),
+      TweenMax.from(".titlesection", 1, {css:{opacity: 0}}),
       TweenMax.from("#noahart", 1, {rotationY:-360, scaleX:3, scaleY:3})
     ])
     .add([
