@@ -72,14 +72,8 @@ p {
 
 #logocontainer {
   position: relative;
-  /*height: 150px;*/
-  /*height: 80px;*/
   bottom: 100px;
   z-index: 1000;
-  /*backdrop-filter: blur(5px);*/
-  /*background: white;*/
-  /*margin-bottom: 10px;*/
-  /*display: none;*/
 }
 
 .noahlogo {
@@ -91,9 +85,14 @@ p {
 }
 
 #noahfull {
-  /*background: rgba(255, 255, 255, 0.5);*/
   filter: drop-shadow(0 0 8px black);
   -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+#noahfull:hover {
+  transform: scale(1.1, 1.1);
+  filter: drop-shadow(0 0 10px black);
 }
 
 #noahart {
@@ -105,6 +104,25 @@ p {
   height: auto;
 }
 
+#dojo {
+  background: hsla(0, 0%, 100%, 0.3);
+  padding: 15px;
+  margin: 10px;
+  box-shadow:  0 0 10px rgba(91, 18, 20, 0.7) inset;
+}
+
+#dojotext {
+  margin-top: 5px;
+  /*padding: 15px;*/
+}
+
+#doge {
+  margin-top: 15px;
+}
+
+#doge:hover {
+  filter: opacity(50%) blur(1px);
+}
 
 .titlesection {
   margin: 30px auto;
@@ -114,6 +132,14 @@ p {
   background: hsl(45, 12%, 55%);
   filter: drop-shadow(1px 2px 5px hsla(0, 0%, 20%, 0.5));
   padding: 5px;
+}
+
+.titledivider {
+  border-radius: 17px;
+  margin: 20px auto;
+  box-shadow:  0 0 10px rgba(91, 18, 20, 0.3) inset;
+  background: transparent;
+  padding: 3px;
 }
 
 h1 {
@@ -139,9 +165,9 @@ h1 {
 }
 
 .project:hover {
-  /*width: 90%;*/
   box-shadow: 0 37px 15px -15px hsla(0, 0%, 20%, 0.2);
   transform: translate(0, -6px);
+  filter: brightness(90%) saturate(40%);
 }
 
 h3 {
@@ -156,6 +182,29 @@ h3 {
   max-height: 600px;
   width: auto;
   margin: auto;
+}
+
+.carousel-caption {
+  padding-bottom: 0px;
+}
+
+.btn-default{
+  background: rgba(34, 112, 255, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  color: white;
+}
+
+.btn-default:hover{
+  opacity: 0.8;
+  background: rgba(167, 198, 255, 0.91);
+  border: 1px solid rgba(0, 0, 0, 0.55);
+}
+
+.mediacontent {
+  margin-top: 30px;
+  max-width: 350px;
+  max-height: 300px;
 }
 
 .footer {
