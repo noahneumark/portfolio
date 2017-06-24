@@ -173,7 +173,7 @@ h1 {
 .plus {
   width: 30px;
   height: auto;
-  filter: invert() drop-shadow(0 0 3px gray);
+  filter: invert() drop-shadow(0 0 4px rgb(88, 88, 88));
   position: absolute;
   bottom: 15px;
   right: calc(50% - 15px);
