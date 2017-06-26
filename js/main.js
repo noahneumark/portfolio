@@ -61,7 +61,8 @@ $(document).ready(function(){
     ])
     .add([
       TweenMax.to(".noahvis", .05, {css:{opacity: 0}}),
-      TweenMax.to("#noahfull", .05, {css:{opacity: 1}})
+      TweenMax.to("#noahfull", .05, {css:{opacity: 1}}),
+      TweenLite.to("body", 1, {className:"+=texture"})
     ]);
 
 

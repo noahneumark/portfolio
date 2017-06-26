@@ -4,10 +4,9 @@ body {
   overflow-x: hidden !important;
 }
 
-/*.container {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-}*/
+.texture {
+  background: url('../images/edd06a32.png');
+}
 
 #noahtop {
   color: rgba(255, 255, 255, 0.43);
@@ -27,7 +26,8 @@ body {
 
 #candle {
   z-index: -5;
-  position: relative; background: url('../images/candle.gif') no-repeat center;
+  position: relative;
+  background: url('../images/candle.gif') no-repeat center;
   background-size: contain;
   height: 80vh;
 }
@@ -224,7 +224,7 @@ h3 {
 .footer {
   margin-top: 100px;
   padding-bottom: 30px;
-  background: hsl(45, 12%, 55%);
+  background: hsla(45, 12%, 55%, 0.6);
   font-family: 'Play', sans-serif;
   color: white;
 }
