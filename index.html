@@ -118,19 +118,25 @@
 
     <div class="container">
       <div class="row-fluid">
-        <img class="logo firstFade" src="./images/icons/ios/ios.png" alt="ios">
-        <img class="logo firstFade" src="./images/icons/ios/cocoapods.png" alt="cocoapods">
-        <img class="logo firstFade" src="./images/icons/ios/coredata.png" alt="coredata">
-        <img class="logo firstFade" src="./images/icons/ios/swift.png" alt="swift">
 
         <img class="logo firstFade" src="./images/icons/js/javascript.png" alt="javascript">
         <img class="logo firstFade" src="./images/icons/js/npm.png" alt="npm">
         <img class="logo firstFade" src="./images/icons/js/angular.png" alt="angular">
+
+        <img class="logo firstFade" src="./images/icons/js/react.png" alt="react">
+        <img class="logo firstFade" src="./images/icons/js/redux.png" alt="redux">
+        <img class="logo firstFade" src="./images/icons/js/firebase.png" alt="firebase">
+
         <img class="logo firstFade" src="./images/icons/js/jquery.png" alt="jquery">
         <img class="logo firstFade" src="./images/icons/js/express.png" alt="express">
         <img class="logo firstFade" src="./images/icons/js/mongodb.png" alt="mongodb">
         <img class="logo firstFade" src="./images/icons/js/nodejs.png" alt="nodejs">
         <img class="logo firstFade" src="./images/icons/js/socketio.png" alt="socketio">
+
+        <img class="logo firstFade" src="./images/icons/ios/ios.png" alt="ios">
+        <img class="logo firstFade" src="./images/icons/ios/cocoapods.png" alt="cocoapods">
+        <img class="logo firstFade" src="./images/icons/ios/coredata.png" alt="coredata">
+        <img class="logo firstFade" src="./images/icons/ios/swift.png" alt="swift">
 
         <img class="logo" src="./images/icons/other/amazonalexa.png" alt="amazonalexa">
         <img class="logo" src="./images/icons/other/aws.png" alt="aws">
@@ -179,6 +185,30 @@
     </div>
 
     <div class="container">
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 text-center">
+          <a data-toggle="modal" data-target="#levermap">
+            <img src="./images/screenshots/levermap/landing.png" class="project" alt="Levermap">
+            <img src="./images/plus.png" class="plus">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h3>LeverMap</h3>
+          <p class="text-justify">
+            A full suite of tools for political activists to organize behind state-level legislation.  Public facing site allows visitors to observe tracked bills and campaign finance information.  Combines and matches data from multiple API's.  Uses Firebase database and authorization security rules.  Implements technologies as AWS Lambda, API Gateway, React-Router-Dom, Re-base and React-Modal.  (React/Redux/Firebase)
+            <a href="https://levermap.herokuapp.com/" target="_blank">Live Website</a>
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2 col-xs-2"></div>
+        <div class="col-md-8 col-xs-8 titledivider"></div>
+      </div>
+
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-4 col-lg-4 text-center">
@@ -234,28 +264,34 @@
         <div class="col-md-1"></div>
       </div>
 
-      <div class="row">
-        <div class="col-md-2 col-xs-2"></div>
-        <div class="col-md-8 col-xs-8 titledivider"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-4 text-center">
-          <a data-toggle="modal" data-target="#todolist">
-            <img src="./images/screenshots/todolist/toDoList.png" class="project" alt="To Do List">
-            <img src="./images/plus.png" class="plus">
-          </a>
-        </div>
-        <div class="col-md-6">
-          <h3>ToDoList</h3>
-          <p class="text-justify">IOS app built in Swift 3.0 that lets a user enter to do items into a list, and then send them to the "completed" list when the task has been completed. Items are sorted by date, and when clicked they move to the other list. Hitting the "+" symbol brings you to the screen for entering a new event. Swiping left on an item reveals an "edit" and "delete" button. Clicking edit brings you to the edit page, where the user can modify the event. Stores entries into CoreData for persistent data. (IOS/Swift) <a href="https://github.com/noahneumark/eventToDoList" target="_blank">On Github</a></p>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-
-
     </div>
+
+    <div class="modal fade and carousel slide" id="levermap">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="./images/screenshots/levermap/landing.png" alt="Landing Page">
+              </div>
+              <div class="item">
+                <img src="./images/screenshots/levermap/legSum.png" alt="Legislative Summary">
+              </div>
+              <div class="item">
+                <img src="./images/screenshots/levermap/billSearch.png" alt="Bill Search">
+              </div>
+            </div><!-- /.carousel-inner -->
+            <a class="left carousel-control" href="#levermap" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#levermap" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div><!-- /.modal-body -->
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 
     <div class="modal fade and carousel slide" id="votergab">
       <div class="modal-dialog">
@@ -339,31 +375,6 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <div class="modal fade and carousel slide" id="todolist">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="./images/screenshots/todolist/toDoList.png" alt="To Do List">
-              </div>
-              <div class="item">
-                <img src="./images/screenshots/todolist/toDoEditDelete.png" alt="Dashboard">
-              </div>
-              <div class="item">
-                <img src="./images/screenshots/todolist/create.png" alt="Add Trip">
-              </div>
-            </div><!-- /.carousel-inner -->
-            <a class="left carousel-control" href="#todolist" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#todolist" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-          </div><!-- /.modal-body -->
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
 
     <div class="modal fade and carousel slide" id="resume">
       <div class="modal-dialog">
